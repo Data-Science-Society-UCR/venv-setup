@@ -1,39 +1,83 @@
 # virtual environment setup for MacOS/Windows
 
-### Mac Installation
+## Mac Installation
 
-1. Install Python (There are a plethora of tutorials if you need them, but it should be pretty straightforward).
-2. Open up `terminal`
-3. To verify your Python installation and version enter the following command(s), depending on which one works.
+### 1. Install Python
+If you haven't already installed Python, install it from the official website: https://www.python.org/downloads/
+
+### 2 & 3. Open Terminal and Verify Python Installation
+Check if Python is installed by running one of the following commands:
 ```
 python3 --version
 ```
 ```
 python --version
 ```
-4. CD to your Desktop, or wherever you want to store your project code.
-5. Create a new directory named `venv`. This is the common naming notation for a virtual environment. If you prefer to organize your virtual environments by Python versions or projects you can reflect that in the naming like so: `venv_3_5_1` (for Python version 3.5.1) or `venv_ParkinsonML` for Parkinson's ML project. Do whatever works best for you!
-6. To create the virtual environment, first you need to enter the directory. You can do this by using the `cd` command. The next step is in the virtual environment directory, enter one of the commands below, depending on which one works.
+If neither works, you may need to install Python or check your PATH settings.
+
+### 4. Clone the Repository
+Navigate to the location where you want to store your project using the `cd` command (e.g., `cd ~/Desktop`)
+
+Clone the Repo using the repo's HTTPS:
 ```
-python3 -m venv .
+git clone https://github.com/your-username/your-repo.git
+```
+
+Navigate into the project directory
+```
+cd your-repo-name
+```
+
+### 5. Create a Virtual Environment Inside the Repository
+Use one of the following commands, depending on which one works.
+```
+python3 -m venv venv
 ```
 ```
-python -m venv .
+python -m venv venv
 ```
-7. Type the following command `ls` to verify the creation of the virtual environment. You should see a few additional folders/files created (`bin`, `include`, `lib`, and `pyvenv.cfg`). Your directory might not look the same, however, it should look more or less similar.
-8. To activate the virtual environment use the following command:
+This will create a `venv/` directory inside the repository. 
+
+### 6. Activate the Virtual Environment
+Run the following command to activate the virtual environment:
 ```
-source bin/activate
+source venv/bin/activate
 ```
-9. We can now install the relevant libraries using the pip3/pip install function. Additionally, we can install Jupyter Notebook using the following command(s), depending on which one works:
+
+### 7. Install Project Dependencies
+If the repository has a `requirements.txt` file, install dependencies (Please note, that not every DSS project will have a `requirements.txt`):
+```
+pip3 install -r requirements.txt
+```
+```
+pip install -r requirements.txt
+```
+
+Additionally, you may want to verify the installed packages using the `pip3 list`/`pip list` command.
+
+### 8. Add Virtual Environment to `.gitignore`
+To prevent accidentally committing the virtual environment, add the following line to the `.gitignore`.
+```
+venv/
+```
+
+### 9. Run Jupyter Notebook (May differ depending on the project requirements)
 ```
 pip3 install notebook
 ```
 ```
 pip install notebook
 ```
-10. After Jupyter Notebook is installed, you should be able to run it by typing `jupyter notebook` in the terminal.
+And to run Jupyter Notebook use the following command:
+```
+jupyter notebook
+```
 
-### Windows Installation
+### 10. Deactive the Virtual Environment When Done
+```
+deactivate
+```
+
+## Windows Installation
 1. 1. Install Python (There are a plethora of tutorials if you need them, but it should be pretty straight forward)
      * For Windows Users, make sure that Python is **added to your Path**. 
