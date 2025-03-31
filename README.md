@@ -1,5 +1,11 @@
 # virtual environment setup for MacOS/Windows
 
+![macOS](https://img.shields.io/badge/macOS-Virtual%20Environment%20Setup-000000?style=for-the-badge&logo=apple)
+![Windows](https://img.shields.io/badge/Windows-Virtual%20Environment%20Setup-0078D4?style=for-the-badge&logo=microsoft)
+![Python](https://img.shields.io/badge/Python-3.8%2B-blue?style=for-the-badge&logo=python)
+![Virtual Environment](https://img.shields.io/badge/Virtual%20Environment-venv-%234CBB87?style=for-the-badge)
+![Dependencies](https://img.shields.io/badge/Dependencies-Requirements%20File-%23FFD700?style=for-the-badge)
+
 ## Mac Installation
 
 ### 1. Install Python
