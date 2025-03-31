@@ -56,7 +56,7 @@ pip install -r requirements.txt
 Additionally, you may want to verify the installed packages using the `pip3 list`/`pip list` command.
 
 ### 8. Add Virtual Environment to `.gitignore`
-To prevent accidentally committing the virtual environment, add the following line to the `.gitignore`.
+To prevent accidentally committing the virtual environment, create a git ignore using the `touch` command, and add the following line to the `.gitignore` (the file name must be .gitignore)!.
 ```
 venv/
 ```
