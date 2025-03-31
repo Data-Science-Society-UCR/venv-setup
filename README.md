@@ -18,7 +18,7 @@ If neither works, you may need to install Python or check your PATH settings.
 ### 4. Clone the Repository
 Navigate to the location where you want to store your project using the `cd` command (e.g., `cd ~/Desktop`)
 
-Clone the Repo using the repo's HTTPS:
+Clone the Repo using the repo's HTTPS (the HTTPS can be found by going to the Repo webpage, clicking the green code button clicking the `HTTPS` tab, and copying the web URL):
 ```
 git clone https://github.com/your-username/your-repo.git
 ```
@@ -56,9 +56,9 @@ pip install -r requirements.txt
 Additionally, you may want to verify the installed packages using the `pip3 list`/`pip list` command.
 
 ### 8. Add Virtual Environment to `.gitignore`
-To prevent accidentally committing the virtual environment, create a git ignore using the `touch` command, and add the following line to the `.gitignore` (the file name must be .gitignore)!.
+To prevent accidentally committing the virtual environment, create a git ignore using the `touch` command (if it does not already exist), and add the following line to the `.gitignore` (the file name must be .gitignore)! You can achieve this by using the following command:
 ```
-venv/
+echo 'venv/' >> .gitignore
 ```
 
 ### 9. Run Jupyter Notebook (May differ depending on the project requirements)
@@ -68,6 +68,7 @@ pip3 install notebook
 ```
 pip install notebook
 ```
+
 And to run Jupyter Notebook use the following command:
 ```
 jupyter notebook
@@ -78,6 +79,75 @@ jupyter notebook
 deactivate
 ```
 
+We will go more into depth about the git-workflow when the projects begin, but this setup will be sufficient and put the entire team(s) on the same page.
+
 ## Windows Installation
-1. 1. Install Python (There are a plethora of tutorials if you need them, but it should be pretty straight forward)
-     * For Windows Users, make sure that Python is **added to your Path**. 
+
+### 1. Install Python
+If you haven't already installed Python, install it from the official website: https://www.python.org/downloads/
+
+### 2. Open PowerShell or Command Prompt
+
+### 3. Verify Python Installation
+```
+python --version
+```
+
+### 4. Clone the repository using HTTPS 
+Navigate to the location where you want to store your project using the `cd` command (e.g., `cd ~/Desktop`)
+
+Clone the repo using HTTPS (The HTTPS can be found by going to the Repo webpage, clicking the green code button clicking the `HTTPS` tab, and copying the web URL).
+```
+git clone https://github.com/your-username/your-repo.git
+```
+
+Navigate into the project directory.
+```
+cd your-repo-name
+```
+
+### 5. Create a Virtual Environment Inside the Repository
+```
+python -m venv venv
+```
+
+### 6. Activate the Virtual Environment
+* Command Prompt:
+```
+.venv\Scripts\activate
+```
+* PowerShell
+```
+.venv\Scripts\Activate.ps1
+```
+
+### 7. Install Project Dependencies
+```
+pip install -r requirements.txt
+```
+
+Additionally, you may want to verify the installed packages using the `pip3 list`/`pip list` command.
+
+### 8. Add Virtual Environment to `.gitignore`
+To prevent accidentally committing the virtual environment, create a git ignore using the `touch` command (if it does not already exist), and add the following line to the `.gitignore` (the file name must be .gitignore)! You can achieve this by using the following command:
+```
+echo venv/ > .gitignore
+```
+
+### 9. Run Jupyter Notebook (May differ depending on the project requirements)
+```
+pip install notebook
+```
+```
+pip install notebook
+```
+
+And to run Jupyter Notebook use the following command:
+```
+jupyter notebook
+```
+
+### 10. Deactive the Virtual Environment When Done
+```
+deactivate
+```
