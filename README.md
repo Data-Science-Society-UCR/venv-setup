@@ -5,6 +5,8 @@
 ![Python](https://img.shields.io/badge/Python-3.8%2B-blue?style=for-the-badge&logo=python)
 ![Virtual Environment](https://img.shields.io/badge/Virtual%20Environment-venv-%234CBB87?style=for-the-badge)
 ![Dependencies](https://img.shields.io/badge/Dependencies-Requirements%20File-%23FFD700?style=for-the-badge)
+![Git](https://img.shields.io/badge/Git-Version%20Control-F05032?style=for-the-badge&logo=git&logoColor=white)
+![Homebrew](https://img.shields.io/badge/Homebrew-Package%20Manager-FBB040?style=for-the-badge&logo=homebrew&logoColor=white)
 
 ### NOTE: For this workflow, you need to have Git installed (Git can be installed via Brew). If you do not have these programs installed, please use the following links.
 [Git Website](https://git-scm.com/downloads/mac), [Brew Website](https://brew.sh/), [How to install Brew on Mac (video)](https://www.youtube.com/watch?v=flQxyoyBX5M)
