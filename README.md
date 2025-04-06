@@ -8,7 +8,8 @@
 ![Git](https://img.shields.io/badge/Git-Version%20Control-F05032?style=for-the-badge&logo=git&logoColor=white)
 ![Homebrew](https://img.shields.io/badge/Homebrew-Package%20Manager-FBB040?style=for-the-badge&logo=homebrew&logoColor=white)
 
-### NOTE: For this workflow, you need to have Git installed (Git can be installed via Brew). If you do not have these programs installed, please use the following links.
+### NOTE: For this workflow, you need to have Git installed. If you do not have these programs installed, please use the following links.
+Git can be installed via Brew on MacOS:
 [Git Website](https://git-scm.com/downloads/mac), [Brew Website](https://brew.sh/), [How to install Brew on Mac (video)](https://www.youtube.com/watch?v=flQxyoyBX5M)
 
 To install Git on Windows, use the following documentation and go to the section "[Installing on Windows](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)"
