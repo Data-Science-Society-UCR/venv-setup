@@ -6,6 +6,12 @@
 ![Virtual Environment](https://img.shields.io/badge/Virtual%20Environment-venv-%234CBB87?style=for-the-badge)
 ![Dependencies](https://img.shields.io/badge/Dependencies-Requirements%20File-%23FFD700?style=for-the-badge)
 
+### NOTE: For this workflow, you need to have Git installed (Git can be installed via Brew). If you do not have these programs installed, please use the following links.
+[Git Website](https://git-scm.com/downloads/mac), [Brew Website](https://brew.sh/), [How to install Brew on Mac (video)](https://www.youtube.com/watch?v=flQxyoyBX5M)
+
+To install Git on Windows, use the following documentation and go to the section "[Installing on Windows](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)"
+
+
 ## Mac Installation
 
 ### 1. Install Python
