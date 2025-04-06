@@ -19,6 +19,7 @@ To install Git on Windows, use the following documentation and go to the section
 
 ### 1. Install Python
 If you haven't already installed Python, install it from the official website: https://www.python.org/downloads/
+* #### If prompted with a box "Add Python to PATH", please check this before clicking "Install Now"
 
 ### 2 & 3. Open Terminal and Verify Python Installation
 Check if Python is installed by running one of the following commands:
@@ -100,6 +101,7 @@ We will go more into depth about the git-workflow when the projects begin, but t
 
 ### 1. Install Python
 If you haven't already installed Python, install it from the official website: https://www.python.org/downloads/
+* #### If prompted with a box "Add Python to PATH", please check this before clicking "Install Now"
 
 ### 2. Open PowerShell or Command Prompt
 
