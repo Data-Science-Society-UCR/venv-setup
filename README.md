@@ -153,7 +153,7 @@ echo venv/ > .gitignore
 
 ### 9. Run Jupyter Notebook (May differ depending on the project requirements)
 ```
-pip install notebook
+pip3 install notebook
 ```
 ```
 pip install notebook
